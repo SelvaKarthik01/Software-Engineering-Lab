@@ -94,23 +94,6 @@ AI/ML: TensorFlow for Java
 
 Cloud & APIs: Google Calendar API, OpenWeather API
 
-👅 Installation & Setup
-
-Clone the repository:
-
-git clone https://github.com/your-repo/smart-calendar.git
-cd smart-calendar
-
-Install dependencies and build the project:
-
-mvn clean install  # for Spring Boot backend
-
-Run the application:
-
-mvn spring-boot:run  # Start the backend server
-
-Open the JavaFX application for desktop or run the Android app on an emulator.
-
 🔐 Security & Privacy
 
 Multi-factor authentication (MFA) for user accounts.
