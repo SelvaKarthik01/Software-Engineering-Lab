@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>63</x>
+      <y>126</y>
+      <w>18</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>type=initial
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>72</x>
+      <y>126</y>
+      <w>72</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;60.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>126</x>
+      <y>117</y>
+      <w>81</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>Initializing</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>306</x>
+      <y>117</y>
+      <w>234</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+
+Synchronization of
+User's Mobile</panel_attributes>
+    <additional_attributes>10.0;20.0;240.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>522</x>
+      <y>117</y>
+      <w>117</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>Dashboard
+bg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>612</x>
+      <y>144</y>
+      <w>198</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+                            Creating Events</panel_attributes>
+    <additional_attributes>10.0;10.0;200.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>738</x>
+      <y>189</y>
+      <w>126</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>Checking Other
+Scheduled Events</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>234</x>
+      <y>117</y>
+      <w>81</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>Login</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>198</x>
+      <y>126</y>
+      <w>54</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;40.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>342</x>
+      <y>243</y>
+      <w>117</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>Reminders</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>396</x>
+      <y>144</y>
+      <w>171</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+
+             Create 
+            Reminders</panel_attributes>
+    <additional_attributes>170.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>234</x>
+      <y>387</y>
+      <w>135</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>Message Notifications</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>576</x>
+      <y>144</y>
+      <w>90</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+Search By 
+ Name,Date 
+ or Time
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>531</x>
+      <y>243</y>
+      <w>117</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>Search &amp; Filter</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>576</x>
+      <y>270</y>
+      <w>72</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+If Event 
+Found</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>531</x>
+      <y>342</y>
+      <w>108</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>Display Event
+Details</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>630</x>
+      <y>342</y>
+      <w>90</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+
+If Event 
+not found</panel_attributes>
+    <additional_attributes>10.0;20.0;80.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>702</x>
+      <y>342</y>
+      <w>108</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>Want to Create
+a Event</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>756</x>
+      <y>216</y>
+      <w>45</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+
+
+Yes</panel_attributes>
+    <additional_attributes>10.0;140.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>414</x>
+      <y>387</y>
+      <w>126</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>Meeting Details</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>297</x>
+      <y>270</y>
+      <w>144</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+
+ Notifications
+on Upcoming 
+Reminders</panel_attributes>
+    <additional_attributes>100.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>405</x>
+      <y>270</y>
+      <w>126</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+Creating 
+ Reminders
+    on Meet</panel_attributes>
+    <additional_attributes>90.0;130.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>63</x>
+      <y>243</y>
+      <w>135</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>Analysis</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>9</x>
+      <y>342</y>
+      <w>108</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>Financial Analysis</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>135</x>
+      <y>342</y>
+      <w>99</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>Screen Time
+Analysis</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>45</x>
+      <y>270</y>
+      <w>99</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+ Financial
+Goals</panel_attributes>
+    <additional_attributes>60.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>135</x>
+      <y>270</y>
+      <w>117</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+ Screen Time
+  Goals</panel_attributes>
+    <additional_attributes>10.0;10.0;50.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>117</x>
+      <y>135</y>
+      <w>423</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>lt=-
+
+
+           Check Weekly/Monthly
+         Analyis</panel_attributes>
+    <additional_attributes>450.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>612</x>
+      <y>270</y>
+      <w>153</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+  No</panel_attributes>
+    <additional_attributes>150.0;80.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>819</x>
+      <y>297</y>
+      <w>162</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>Planning
+--
+Weather Forecasting
+Luck Deciphering
+Location Availability
+
+-.
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>783</x>
+      <y>216</y>
+      <w>153</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+                     No Clashing</panel_attributes>
+    <additional_attributes>30.0;10.0;130.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>630</x>
+      <y>117</y>
+      <w>324</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+
+
+
+                                                              Clashing</panel_attributes>
+    <additional_attributes>260.0;100.0;280.0;100.0;280.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>891</x>
+      <y>387</y>
+      <w>45</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+Yes</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>855</x>
+      <y>432</y>
+      <w>99</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>Event Created</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>972</x>
+      <y>324</y>
+      <w>63</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+No </panel_attributes>
+    <additional_attributes>10.0;20.0;50.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>1017</x>
+      <y>324</y>
+      <w>81</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>Suggestions</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>945</x>
+      <y>351</y>
+      <w>189</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+                        Accepted</panel_attributes>
+    <additional_attributes>130.0;10.0;130.0;110.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>855</x>
+      <y>198</y>
+      <w>279</w>
+      <h>171</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+
+Create Another
+Event</panel_attributes>
+    <additional_attributes>270.0;170.0;290.0;170.0;290.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+</diagram>
