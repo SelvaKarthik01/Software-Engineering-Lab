@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>832</x>
+      <y>80</y>
+      <w>192</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>Events
+--
++ Event_id: string
++ title: string
++ description: string
++ date: Date
++ time: Time
++ location: string
++ priority: int
++ recurrence: Boolean
+--
+/+createEvent(title,date,time,location,/
+/                      priotiy,recurrence):void/
+/+editEvent(eventID,newDetails): void/
+/+deleteEvent(eventID): void/
+/+attachFile(file): void/
+
+bg=PINK</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>616</x>
+      <y>80</y>
+      <w>168</w>
+      <h>136</h>
+    </coordinates>
+    <panel_attributes>Calendar
+--
++ Calendar_id: int
++ Events: List&lt;Event&gt;\
++ remindar: List&lt;remindar&gt;
++ userId: String 
+--
+/+addEvent(Event): void/
+/+deleteEvent(eventID): void/
+/+viewCalendar(): List&lt;Event&gt;/
+/+syncCalendar(): void/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>808</x>
+      <y>360</y>
+      <w>264</w>
+      <h>128</h>
+    </coordinates>
+    <panel_attributes>Remindar
+--
++reminderID: string
++eventID: String
++time: Time
++notification_type: String
+--
+/+setRemainder(eventID, time,notifcationType): void/
+/+cancelRemaindar(remainderID): void/
+/+sendNotification(): void/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1056</x>
+      <y>48</y>
+      <w>312</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>Weather Forecast
+--
++ forecastID: string
++ location: string
++ date: Date
++ weatherData: string
+--
+/+fetchWeatherData(location,date): string/
+/+updateEventBasedOnWeather(eventID,weatherData): void/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>584</x>
+      <y>240</y>
+      <w>224</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>Voice Assistant
+--
+assistantID: string
+userID: string
+--
+/+processVoiceCommand(command): string/
+/+navigation(title,date,time,location): void/
+/+createEventviaVoice(): void/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>16</x>
+      <y>432</y>
+      <w>296</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Financial Analysis
+--
++ analysisID: string
++ userID : string
++ expenses: List&lt;Expenses&gt;
++ profitloss: Double
+--
+/+analyzeExepenses(startDate,endDate): List&lt;Expenses&gt;/
+/+PredictProfitLoss(startDate,endDate): Double/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1056</x>
+      <y>192</y>
+      <w>264</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>Location Planning
+--
++ locationID: 	string
++eventID : string
++ route: string
+--
+/+findBestRoute(startLocation,endLocation): String/
+/+updateEventlocation(eventID,newLocation): void/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>312</x>
+      <y>312</y>
+      <w>176</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>BackUp
+--
++ backupID: string
++ userID: String
++ backupDate: Date
++ backupData: string 
+--
+/+createBackup(): void/
+/+restoreBackup(backupID): void/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>496</x>
+      <y>440</y>
+      <w>224</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>Feedback
+--
++ feedbackID: string
++ userID: string
++ rating: int
++ comments: string
+--
+/+submitFeedback(rating,comments): void/
+/+viewFeedback(): List&lt;Feedback&gt;/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>312</x>
+      <y>48</y>
+      <w>192</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>User
+--
+- User_id: int
+- User_pwd: string
+- Name: string
+- email: string
+- preferences: Preferences     
+--
+/+login(email,password): Boolean/
+/+logout(): void/
+/+updateProfile(name,email): void/
+/+setPreferences(preferences): void/
+
+bg=ORANGE</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>776</x>
+      <y>144</y>
+      <w>72</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;70.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>928</x>
+      <y>272</y>
+      <w>24</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>496</x>
+      <y>112</y>
+      <w>136</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;150.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>496</x>
+      <y>152</y>
+      <w>168</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;190.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1016</x>
+      <y>72</y>
+      <w>56</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>
+</panel_attributes>
+    <additional_attributes>10.0;90.0;50.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1016</x>
+      <y>176</y>
+      <w>56</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;10.0;50.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>464</x>
+      <y>192</y>
+      <w>112</w>
+      <h>264</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;10.0;120.0;310.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>392</x>
+      <y>192</y>
+      <w>24</w>
+      <h>136</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;10.0;10.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>152</x>
+      <y>192</y>
+      <w>192</w>
+      <h>256</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>220.0;10.0;10.0;300.0</additional_attributes>
+  </element>
+</diagram>
